@@ -18,7 +18,7 @@ _SNOMED_REL_IS_A = '116680003'
 
 
 class Snomed:
-    def __init__(self, snomed_path, release_id='20190731', taxonomy=True):
+    def __init__(self, snomed_path, release_id='20220930', taxonomy=True):
         self.snomed_path = snomed_path
         self.release_id = release_id
         self.definition_index = {}
