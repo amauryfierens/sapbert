@@ -1,0 +1,4 @@
+snomed_int_path: '/home/fierens/Researcher/hierarchical-sapbert/data/Snomed_int'
+snomed_extension_path_list: null
+lang_list:
+  - en

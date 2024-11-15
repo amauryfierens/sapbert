@@ -1,0 +1,42 @@
+defaults:
+  - _self_
+  - el_test: snomed
+  - snomed: snomed_umls_int
+
+
+model_dir: "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext" #"Dr-BERT/DrBERT-7GB" #"camembert-base" #"microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext" #almanach/camembert-bio-base"
+train_dir: ../data/training_file/training_file_translation_fr_smart_uncased_no_dup_pairwise_pair_th50.txt
+output_dir: tmp/sapbert-yolo
+hierarchical: True
+wandb_project: sapbert_french-yolo
+use_cuda: True
+epoch: 1
+train_batch_size: 512
+learning_rate: 2e-5
+weight_decay: 0.0044
+max_length: 25
+checkpoint_step: 999999
+parallel: True 
+amp: True
+pairwise: True
+random_seed: 33
+loss: ms_loss
+use_miner: True
+type_of_triplets: all
+miner_margin: 0.2
+
+ms_loss_alpha: 4
+ms_loss_beta: 50
+
+agg_mode: cls
+trust_remote_code: False
+early_stopping: True
+early_stopping_step: 2000
+
+eval_el: True
+eval_el_n_steps: 1000
+el_num_workers: 16
+el_batch_size: 256
+
+save_checkpoint_all: False
+use_wandb: True

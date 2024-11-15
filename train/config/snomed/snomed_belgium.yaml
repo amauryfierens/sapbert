@@ -1,0 +1,9 @@
+snomed_int_path: '/home/fierens/Researcher/hierarchical-sapbert/data/Snomed_int'
+snomed_extension_path_list:
+  - '/home/fierens/Researcher/hierarchical-sapbert/data/Snomed_belgium'
+lang_list:
+  - en
+  - fr
+
+# TODO: create the extension of el_test for french part (with quaero french med) 
+# TODO: verify that the loading of the snomed graph is working for french

@@ -52,3 +52,7 @@ biosyn.egg-info
 semantic
 
 data/snomed
+*multirun/*
+el_test/input_data/*
+el_test/outputs/*
+wandb/*

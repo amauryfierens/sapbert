@@ -1,0 +1,14 @@
+defaults:
+  - _self_
+  - dataset: ncbi
+
+input_path: el_test/input_data
+dest_ontology: "SNOMEDCT_US"
+
+snomed_int_path: ${snomed.snomed_int_path}
+snomed_extension_path_list: ${snomed.snomed_extension_path_list}
+lang_list: ${snomed.lang_list}
+
+batch_size: ${config.batch_size}
+num_workers: ${config.num_workers}
+snomed_subset: True

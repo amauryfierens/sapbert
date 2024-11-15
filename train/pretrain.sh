@@ -1,7 +1,7 @@
-CUDA_VISIBLE_DEVICES=$1 python3 train.py \
+CUDA_VISIBLE_DEVICES="0,1" python train.py \
 	--model_dir "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext" \
-	--train_dir $PATH_TO_TRAIN_FILE \
-	--output_dir tmp/sapbert\
+	--train_dir "/home/fierens/Researcher/hierarchical-sapbert/data/training_file/training_file_translation_fr_smart_uncased_no_dup_pairwise_pair_th50.txt" \
+	--output_dir tmp/sapbert-freng-smart\
 	--use_cuda \
 	--epoch 1 \
 	--train_batch_size 256 \
